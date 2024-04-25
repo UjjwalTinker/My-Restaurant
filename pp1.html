@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #f10641;
+        font-family: Times New Roman;
+        padding: 20px;
+       
+      }
+      header h1{
+        color: black;
+        text-align: center;
+       font-size: 50px;
+       padding-bottom: 10px;
+    text-decoration: 10px black double underline ;   
+
+
+      }
+
+      header nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: end;
+
+      }
+
+      header nav ul li {
+        display: inline;
+        margin-right: 20px;
+
+      }
+
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        transition-property: all;
+        transition-duration: .5s;
+      }
+      header nav ul li :hover{
+        padding: 10px;
+        border-radius: 10px;
+        border:none;
+        background-color: wheat; 
+        
+      }
+      #hh{
+        text-align: center;
+        font-family: Times New Roman;
+        background-color: #000000;
+        padding: 25px;
+        margin-top: 0px;
+        border: 1px double black;
+        color: white;
+      }
+      h2{
+        font-family: Times New Roman;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        max-width: fit-content;
+
+
+      }
+
+      #img-section{
+        background-color: rgb(244, 233, 215);
+      }
+      #img-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+      #imgg{
+        transition-property: all;
+         transition-duration: .2s;
+         padding: 20px;
+
+      }
+      #imgg:hover{
+      
+        transform: scale(1.1);
+        background-color: rgb(240, 213, 163);
+
+      }
+    
+
+      section,
+      aside {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .menu-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px; 
+      }
+     
+
+      .menu-item button {
+        /* background-color: #333; */
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      #m1:hover{
+        background-color: #333;
+        color: white;;
+
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      #contact:hover{
+     border: 4px solid #333;
+      }
+      #booking:hover{
+     border: 4px solid #333;
+      }
+      #themes:hover{
+     border: 4px solid #333;
+      }
+      #cart:hover{
+     border: 4px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BURGER BONANZA</h1>
+      <nav>
+        <ul>
+            <li  style="margin-right: 200px; font-size:xx-large; font-weight: 500; font-family:Brush Script MT;">Handmade, Heartfelt, Hearty!</li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#themes">Themes</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact Us</a></li>   
+          <li><a href="#cart">My Orders</a></li>          
+       
+          <li><a href="https://www.google.com/maps/place/Himalaya+Tower/@28.6469201,77.1866964,11z/data=!4m10!1m2!2m1!1shimalayan+tower+nodia!3m6!1s0x390cf004268e3fd3:0x7f2743f237e19de9!8m2!3d28.6469201!4d77.3844555!15sChVoaW1hbGF5YW4gdG93ZXIgbm9pZGGSARJhcGFydG1lbnRfYnVpbGRpbmfgAQA!16s%2Fg%2F11bywvyq3x?entry=ttu" target="_blank">We Are Here</a></li>
+
+          
+        </ul>
+      </nav>
+    </header>
+
+    <h1 id="hh">We are in your City</h1>
+    <section id="img-section">
+        <div id="img-div">
+           <div id="imgg">
+            <div class="img123">
+                <img src="burger1.jpeg" alt="">
+            </div>
+            <a href="https://googlemaps.com" target="_blank" style="color: black; font-size: x-large; text-decoration: none;" >Jaipur</a>
+           </div>
+
+            <div id="imgg">
+                <div class="img123">
+                    <img src="burger2.jpeg" alt="">
+                </div>
+                <a href="https://googlemaps.com" target="_blank" style="color: black; font-size: x-large; text-decoration: none;">Delhi</a>
+
+            </div>
+
+           <div id="imgg">
+            <div class="img123">
+                <img src="burger3.jpeg" alt="">
+
+            </div>
+            <a href="https://googlemaps.com" target="_blank" style="color: black; font-size: x-large; text-decoration: none;">Mumbai</a>
+
+           </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <section id="menu">
+        <h2>Recommended</h2>
+        <div id="m1"class="menu-item">
+            <h2>Combo 299 Rs</h2>
+            <h3>Crispy Cheeze Burger, Medium Coke, Cheeze Fries</h3>
+            <p>299 RS</p>
+            <button onclick="addToCart('Combo 299')">Add to Cart</button>
+          </div>
+          <h2>Our Best Seller</h2>
+        <div class="menu-item">
+            <div id="m1"class="menu-item">
+                <h3>Crispy Burger</h3>
+                <p>220 Rs</p>
+                <button onclick="addToCart('Crispy Burger')">Add to Cart</button>
+              </div>
+      <h2>Menu</h2>
+      <div id="m1" class="menu-item">
+        <h3>Cheeze Burger</h3>
+        <p>150 Rs</p>
+        <button onclick="addToCart('Cheeze Burger')">Add to Cart</button>
+      </div>
+      <div id="m1" class="menu-item">
+        <h3>Onion Burger</h3>
+        <p>160 RS</p>
+        <button onclick="addToCart('Onion Burger')">Add to Cart</button>
+      </div>
+      <div id="m1" class="menu-item">
+        <h3>Double patty Burger</h3>
+        <p>200 RS</p>
+        <button onclick="addToCart('>Double patty Burger')">Add to Cart</button>
+      </div>
+      <div id="m1" class="menu-item">
+        <h3>Crispy Burger</h3>
+        <p>220 RS</p>
+        <button onclick="addToCart('Crispy Burger')">Add to Cart</button>
+      </div>
+      <div id="m1"class="menu-item">
+        <h3>Bacon Cheeze Burger</h3>
+        <p>300 RS</p>
+        <button onclick="addToCart('Bacon Cheeze Burger')">Add to Cart</button>
+      </div>
+      <div id="m1"class="menu-item">
+        <h3>Clasic Burger</h3>
+        <p>270 RS</p>
+        <button onclick="addToCart('Clasic Burger')">Add to Cart</button>
+      </div>
+      <div id="m1"class="menu-item">
+        <h2>Combo 199 Rs</h2>
+        <h3>Crispy Burger, Coke, Fries</h3>
+        <p>199 RS</p>
+        <button onclick="addToCart('Combo 199')">Add to Cart</button>
+      </div>
+      <div id="m1" class="menu-item">
+        <h2>Combo 299 Rs</h2>
+        <h3>Crispy Cheeze Burger, Medium Coke, Cheeze Fries</h3>
+        <p>299 RS</p>
+        <button onclick="addToCart('Combo 299')">Add to Cart</button>
+      </div>
+      <div id="m1"class="menu-item">
+        <h2>Combo 399 Rs</h2>
+        <h3> Bacon Crispy Cheeze Burger, large Coke, Brown Samp Fries</h3>
+        <p>399 RS</p>
+        <button onclick="addToCart('Combo 399')">Add to Cart</button>
+      </div>
+      <div id="m1"class="menu-item">
+        <h3>Our Special Burger</h3>
+        <p>--Items Included--</p>
+        <p>corn, capsicum, allupatty, onion, cheeze, mixSauses </p>
+        <p>400 RS</p>
+        <button onclick="addToCart('Special Burger')">Add to Cart</button>
+      </div>
+     
+      <!-- Add more menu items -->
+    </section>
+
+    <section id="themes">
+      <h2>Themes</h2>
+      <select id="theme-select">
+        <option value="1">Classic</option>
+        <option value="2">Romantic</option>
+        <option value="3">Outdoor</option>
+        <option value="4">Indoor</option>
+
+      </select>
+    </section>
+
+    <section id="booking">
+      <h2>Booking</h2>
+      <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+        <label for="duration">Duration (hours):</label>
+        <input type="number" id="duration" min="1" max="4" required />
+        <label for="seating">Seating:</label>
+        <select id="seating">
+          <option value="indoor">Indoor</option>
+          <option value="outdoor">Outdoor</option>
+        </select>
+        <label for="delivery">Quick Delivery:</label>
+        <input type="checkbox" id="delivery" />
+        <button type="submit" onclick="bookTable()">Book Now</button>
+      </form>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <section style="display: flex; justify-content: start ;">
+      <p style=" margin-right: 100px; margin-left: 0px;">Email - BurgerBonanza@gmail.com</p>
+      <p>Ph no<sub>..</sub> - 9829482990</p>
+    </section>
+      <p style="margin-left: 18px;">Address -  2F, Himalayan Tower, Nodia, Delhi, India</p>
+    </section>
+
+    <aside id="cart">
+      <h2>Cart</h2>
+      <ol type="1" id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </ol>
+      <button onclick="checkout()" style="font-size: large; border: none; cursor: pointer ; font-weight: 800; padding: 20px;">Click Here For Checkout</button>
+    </aside>
+
+    <footer>
+      <p>&copy; 2024 Burger Bonanza</p>
+    </footer>
+  </body>
+  <script src="pp1.js"></script>
+</html>
